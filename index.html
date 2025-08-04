@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ریحونستون - Persian Poetry Garden</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Animated Pixel Art Background Layers -->
+    <div class="pixel-art-bg">
+        <div class="pixel-layer garden-layer"></div>
+        <div class="pixel-layer mountain-layer"></div>
+        <div class="pixel-layer ocean-layer"></div>
+        <div class="pixel-layer spring-layer"></div>
+        <div class="floating-particles"></div>
+        <div class="ripple-container"></div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="main-container">
+        <!-- Dedication Section - Most Important -->
+        <section class="dedication-section">
+            <div class="glass-card dedication-card interactive-glass">
+                <div class="dedication-content">
+                    <h1 class="dedication-title glow-text">ریحانه ریحانکم</h1>
+                    <div class="dedication-message">
+                        <p class="typing-text">از تو ممنونم بابت چیزی که هستی</p>
+                        <p class="typing-text">ولی تو منو ببخش بابت چیزی که هستم</p>
+                    </div>
+                    <div class="pixel-flowers animated-pixels"></div>
+                </div>
+                <div class="glass-shine"></div>
+            </div>
+        </section>
+
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="glass-card hero-card interactive-glass">
+                <h2 class="hero-title glow-text">ریحونستون</h2>
+                <p class="hero-subtitle">باغی از زیباترین اشعار عاشقانه ایران، هدیه‌ای ویژه برای ریحانه عزیز</p>
+                <div class="animated-garden pixel-garden-hero"></div>
+                <div class="glass-shine"></div>
+            </div>
+        </section>
+
+        <!-- Poets Navigation -->
+        <section class="poets-section">
+            <div class="poets-grid">
+                <div class="poet-card glass-card interactive-glass magnetic-element" data-poet="hafez">
+                    <div class="poet-avatar breathing-avatar">حافظ</div>
+                    <h3>حافظ شیرازی</h3>
+                    <p>لسان الغیب، استاد غزل فارسی</p>
+                    <div class="pixel-rose animated-pixels"></div>
+                    <div class="glass-shine"></div>
+                </div>
+                
+                <div class="poet-card glass-card interactive-glass magnetic-element" data-poet="rumi">
+                    <div class="poet-avatar breathing-avatar">رومی</div>
+                    <h3>مولانا جلال‌الدین رومی</h3>
+                    <p>عارف بزرگ و شاعر عشق الهی</p>
+                    <div class="pixel-whirl animated-pixels"></div>
+                    <div class="glass-shine"></div>
+                </div>
+                
+                <div class="poet-card glass-card interactive-glass magnetic-element" data-poet="saadi">
+                    <div class="poet-avatar breathing-avatar">سعدی</div>
+                    <h3>سعدی شیرازی</h3>
+                    <p>شیخ اجل سعدی، صاحب گلستان و بوستان</p>
+                    <div class="pixel-garden animated-pixels"></div>
+                    <div class="glass-shine"></div>
+                </div>
+                
+                <div class="poet-card glass-card interactive-glass magnetic-element" data-poet="sepehri">
+                    <div class="poet-avatar breathing-avatar">سپهری</div>
+                    <h3>سهراب سپهری</h3>
+                    <p>شاعر طبیعت و نقاش آسمان</p>
+                    <div class="pixel-sky animated-pixels"></div>
+                    <div class="glass-shine"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Poetry Display -->
+        <section class="poetry-section hidden liquid-glass" id="poetry-display">
+            <div class="glass-card poetry-card interactive-glass">
+                <div class="back-button interactive-btn">← بازگشت به باغ</div>
+                <div class="poet-info">
+                    <h2 id="poet-name" class="glow-text"></h2>
+                    <p id="poet-bio"></p>
+                </div>
+                <div class="poems-container" id="poems-container">
+                    <!-- Poems will be loaded here -->
+                </div>
+                <div class="glass-shine"></div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Cursor Follower for Magnetic Effect -->
+    <div class="cursor-follower"></div>
+    
+    <!-- Motion Control -->
+    <div class="motion-control">
+        <button id="reduce-motion" class="btn btn--sm">کاهش حرکت</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
